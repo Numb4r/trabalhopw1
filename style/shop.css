@@ -1,0 +1,29 @@
+
+.item-shop{
+    width: 200px;
+    color: black;
+    background-color: lightgrey;
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    border: 1px black solid;
+}
+.item-shop img{
+    width: 30px;
+    height: 30px;   
+}
+.item-shop a{
+    margin: 20px auto;
+    background-color: blue;
+    text-align: center;
+    border: 2px solid black;
+    padding: 14px 10px;
+    outline: none;
+    display: block;
+
+}
+.list-items{
+    margin: 10px 10px 100px 10px;
+}
+
+
