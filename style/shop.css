@@ -8,26 +8,38 @@
     color: black;
     background-color: lightgrey;
     height: 300px;
-    align-items: center;
     text-align: center;
     border: 1px black solid;
+    margin: 30px 30px ;
+    
+    
 }
 .item-shop img{
     width: 30px;
     height: 30px;   
+    margin-bottom: 3em;
 }
 .item-shop a{
-    margin: 20px auto;
-    background-color: blue;
+    margin: 20px 20px;
     text-align: center;
+    color: black;
+    text-decoration: none;
+    background-color: blue;
     border: 2px solid black;
+    /* text-shadow: 10 0.5 0 black; */
+    border-radius: 30px;
     padding: 14px 10px;
-    outline: none;
     display: block;
 
 }
+.item-shop a:hover{
+    margin: 10px 10px;
+    transition: 0.5s;
+}
+
 .list-items{
     margin: 10px 10px 100px 10px;
+    display: flex;
 }
 
 
