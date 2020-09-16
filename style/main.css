@@ -1,5 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-font-color: blanchedalmond
+}
 body{
-    color: blanchedalmond;
+    color: var(--main-font-color);
     background-color:gray;
 }
 header{
@@ -37,18 +44,28 @@ nav a:hover{
 .text-header{
     display: inline-block
 }
+.main{
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
 .image-header{
     width: 100px;
     height: 50px;
     margin: 0 10px 0 0 ;
     display: inline-block
 }
-
-.main{
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+section p {
+    margin-top: 20px;
+}
+.plano-header{
+    margin-bottom: 20px;
 }
 
+.emp{
+    background-color: transparent;
+    font-style: italic;
+    color:var(--main-font-color)
+}
 .planos{
 
 }
@@ -62,5 +79,10 @@ nav a:hover{
 
 }
 .plano-link{
+    
+}
+footer{
+    margin-left: 10em;
+    background-color:royalblue ;
     
 }
