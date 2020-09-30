@@ -2,18 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* color:black; */
 }
 :root{
 
     /* --font-color: #f1faee; */
-
     /* --background-color: #457b9d;
     --secondary-background:#a8dadc;
     --font-secondary-color: #1d3557;
     --emp-color:#e63946; */
-
-
     --background-color:#E8F5FA;
     --secondary-background:#3C7F9A;
     --font-secondary-color: #130C34;
@@ -29,7 +25,9 @@ header{
     /* text-align: center; */
     background: var(--secondary-background);
     align-items: stretch;
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
+    position: fixed;
+    width: 100%;
     /* margin: 10px 0px 0px 0px ; */
     /* align-items: center; */
     /* white-space:nowrap; */
@@ -77,6 +75,7 @@ nav a:hover{
     text-align: center;
     background: url("../../img/money.jpg");
     padding: 20em 0;
+    border-bottom: 3px  solid var(--emp-color);
 }
 .sobre article {
     background: rgba(0, 0, 0, 0.6);
@@ -85,7 +84,6 @@ nav a:hover{
     padding: 10em 0;
     color:var(--background-color)
 }
-
 
 .plano-header{
     margin-bottom: 20px;
@@ -99,39 +97,58 @@ nav a:hover{
 }
 .planos{
     display: inline-flex;
+    margin: 20em 0 ;    
+}
+.plano-description{
+    color:rgba(0, 0, 0, 0.8);
+    margin-bottom: 100px;
+
 }
 .plano-box{
     border: 1px solid var(--secondary-background);
     box-shadow: 3px 5px var(--secondary-background);
+    min-height: 300px;
+    
     border-radius: 5px;
-    margin: 10px 5%;   
+    margin: 10px 3%;   
     text-align: center;
     padding:  10px 20px;
     transition: 1s; 
-    
-
 }
 .plano-box:hover{
-    box-shadow: 20px 30px var(--secondary-background);
+    box-shadow: 10px 15px var(--secondary-background);
+    
 }
 .plano-box a{
     text-decoration: none;
     margin: 10px 10px;
-    border: 1px var(--secondary-background) solid;  
-    padding: 10px 5px;
+    /* border: 1px var(--secondary-background) solid;   */
+    padding: 5px 30px;
+    /* width: 100%;
+    height: 100%; */
     border-radius: 3px;
     background: var(--emp-color);
+    transition: 0.5s;
     
 }
 .plano-box a:hover{
     margin: 30px 30px;
+    padding: 10px 60px;
     background: var(--icon-color);
+    border-radius: 10px;
 }
-.plano-box a:active{
-    
+
+.contato{
+    background: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    width: 100%;
+    display: inline-flex;
+    /* padding: 0  0 0 10px ; */
+    /* margin: 20px 0 0 0 ; */
+    /* padding: 20em 0 ; */
 }
-.plano-header{
-    text-align: center;
+.contato p {
+    margin: 0 14%;
 }
 footer{
     background-color:var(--secondary-background) ;
