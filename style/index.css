@@ -1,3 +1,9 @@
+.emp{
+    text-decoration: none;
+    background-color: transparent;
+    font-style: italic;
+    color: white
+}
 .sobre{
     text-align: center;
     background: url("../img/money.jpg");
@@ -17,17 +23,13 @@
     margin-bottom: 20px;
 }
 
-.emp{
-    text-decoration: none;
-    background-color: transparent;
-    font-style: italic;
-    color: white
-}
 .planos{
-    /* display: inline-flex; */
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:30px;
     margin: 20em 0 ;    
+    padding:30px;
 }
 .plano-description{
     color:rgba(0, 0, 0, 0.8);
@@ -38,21 +40,18 @@
     border: 1px solid var(--secondary-background);
     box-shadow: 3px 5px var(--secondary-background);
     min-height: 300px;
-    
     border-radius: 5px;
-    margin: 10px 3%;   
     text-align: center;
     padding:  10px 20px;
-    transition: 1s; 
+    transition: 1s ; 
 }
 .plano-box:hover{
     box-shadow: 10px 15px var(--secondary-background);
-    
 }
 .plano-box a{
     text-decoration: none;
     margin: 10px 10px;
-    /* border: 1px var(--secondary-background) solid;   */
+    border: 1px var(--secondary-background) solid;  
     padding: 5px 30px;
     /* width: 100%;
     height: 100%; */
