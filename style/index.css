@@ -1,13 +1,8 @@
-.image-header{
-    width: 100px;
-    height: 50px;
-    margin: 0 10px ;
-    /* display: inline-block */
-}
 .sobre{
     text-align: center;
     background: url("../img/money.jpg");
     padding: 20em 0;
+    /* border-top : 3px solid black; */
     border-bottom: 3px  solid var(--emp-color);
 }
 .sobre article {
@@ -29,7 +24,9 @@
     color: white
 }
 .planos{
-    display: inline-flex;
+    /* display: inline-flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 20em 0 ;    
 }
 .plano-description{
