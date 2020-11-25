@@ -8,52 +8,40 @@
     <link rel="stylesheet" href="style/shop.css">
     <link rel="stylesheet" href="style/card-shop.css">
     <script src="https://kit.fontawesome.com/b79c855bf7.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="style/index.css"> -->
+    <link rel="stylesheet" href="style/index.css">
     <title>Agiota.com</title>
 </head>
 
-<body>
-    <nav>
+<body onload="load_info()">
+    <nav id="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
-        <a href="index.html">Sobre</a>
+        <a href="index.html#sobre">Sobre</a>
         <a href="index.html#planos">Planos</a>
-        <a href="index.html">Contato</a>
+        <a href="index.html#contato">Contato</a>
         <a href="shop.html">Shop</a>
         <a href="carrinho.html"><img src="" alt=""></a>
         <a href="login.html">Register/Login</a>
     </nav>
 
-    <section class="main">
-        <header>
-            <div class="grid-item">
-                <a href="" class="menu-button"><i class="fas fa-bars"></i></a>
-            </div>
-            <div class="grid-item">
-                <img src="img/hulk.png" class="image-header">
-                <h1 class="text-header">Agiota inc</h1>
-            </div>
-        </header>
-        <section class="list-items">
-            <article class="item-shop">
-                <div class="container-image">
-                    <img src="img/camixa.png" alt="">
-                </div>
-                <span class="price">$120$</span>
-                <a href="">Comprar</a>
-            </article>
-            <article class="item-shop">
-                <div class="container-image">
-                    <img src="img/hulk.png" alt="">
-                </div>
-                <span class="price">$120</span>
-                <a href="">Comprar</a>
+    <header>
+        <div class="grid-item">
+            <a href="javascript:void(0)" class="menu-button" id="menu-button" onclick="openNav()"><i class="fas fa-bars"></i></a>
+        </div>
 
-            </article>
+        <div class="grid-item">
+            <img src="img/hulk.png" class="image-header">
+            <h1 class="text-header">Agiota inc</h1>
+        </div>
+    </header>
 
+    <section class="main" id="main">
+        <section class="list-items" id="list-items">
         </section>
     </section>
     <footer>Desenvolvido por : <em>Soft Soluções Web</em></footer>
-
 </body>
+<script src="js/shop.js"></script>
+<script src="js/menu.js"></script>
 
 </html>
