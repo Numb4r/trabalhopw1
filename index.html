@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style//main.css">
+    <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/index.css">
     <script src="https://kit.fontawesome.com/b79c855bf7.js" crossorigin="anonymous"></script>
+    
     <title>Agiota.com</title>
 </head>
 
 <body>
-    <nav>
+    <nav id="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
         <a href="index.html#sobre">Sobre</a>
         <a href="index.html#planos">Planos</a>
@@ -21,17 +23,17 @@
         <a href="login.html">Register/Login</a>
     </nav>
 
-    <section class="main">
-        <header>
-            <div class="grid-item">
-                <a href="" class="menu-button"><i class="fas fa-bars"></i></a>
-            </div>
+    <header>
+        <div class="grid-item">
+            <a href="javascript:void(0)" class="menu-button" id="menu-button" onclick="openNav()"><i class="fas fa-bars"></i></a>
+        </div>
 
-            <div class="grid-item">
-                <img src="img/hulk.png" class="image-header">
-                <h1 class="text-header">Agiota inc</h1>
-            </div>
-        </header>
+        <div class="grid-item">
+            <img src="img/hulk.png" class="image-header">
+            <h1 class="text-header">Agiota inc</h1>
+        </div>
+    </header>
+    <section class="main" id="main">
         <section id="sobre" class="sobre">
             <article>
                 <p>Somos o melhor núcleo de empréstimo pessoal e empresarial atualmente no Brasil.</p>
@@ -87,5 +89,6 @@
     </section>
     <footer>Desenvolvido por : <em>Soft Soluções Web</em></footer>
 </body>
+<script src="js/menu.js"></script>
 
 </html>
